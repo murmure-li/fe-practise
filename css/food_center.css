@@ -1,0 +1,55 @@
+
+
+.content .title{
+    display: flex;
+}
+.content .title .num{
+    font-size: 120px;
+    font-family: Impact;
+    font-weight: 400;
+    color: #DDDDDD;
+}
+.content .title .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #CF0202;
+    padding: 20px 20px;
+    font-size: 34px;
+}
+.content .title .desc .en{
+    font-size: 30px;
+}
+
+.content .desc{
+    padding: 36px 72px;
+    font-size: 22px;
+    color: #333;
+}
+
+.food-list .list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.prawns{
+    width: 371px;
+}
+.chart{
+    width: 370px;
+    height: 260px;
+
+}
+.food-list .prawns>.title{
+    color: #CF0202;
+    font-size: 26px;
+}
+.details .line{
+    width: 20px;
+    height: 4px;
+    background: #333;
+}
+.details>p{
+    font-size: 16px;
+    color: #333;
+}

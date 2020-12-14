@@ -1,0 +1,134 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+p{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #CF0202;
+}
+.header{
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header>img{
+    height: 60px;
+}
+.navs{
+    display: flex;
+}
+.nav-item{
+    padding: 16px 30px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    box-sizing: border-box;
+    color:#fff;
+}
+.header .nav-item:hover{
+    height: 80px;
+    background-color: bisque;
+    color: #000;
+
+}
+.dsc{
+    font-size: 16px;
+}
+.nav-item>span{
+     
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+footer{
+    width: 100%;
+    background-color: #CF0202;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 36px 90px;
+    box-sizing: border-box ;
+
+}
+.footer .nav-item{
+    padding: 16px 48px;
+}
+
+.contact>p{
+    color: #FAFAFA;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.contact .tel{
+    color: #FDD173;
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact .tel>span{
+    color: #FAFAFA;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.siteinfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 48px;
+}
+.contact .address{
+    color: #FAFAFA;
+    font-size: 18px;
+    padding-top: 30px;
+
+}
+.copyright{
+    margin: 0 auto;
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 16px;
+}
+
+.content{
+    width: 1200px;
+    margin: 60px auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    height: 800px;
+}
+.banner .banner-item{
+    height: 800px;
+    width: 100%;
+    min-width: 1200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.dynamic{
+    width: 100%;
+    height: 48px;
+    background-color: #FFC600;
+    
+}
+.dynamic>p{
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 8px 30px;
+}
