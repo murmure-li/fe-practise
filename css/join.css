@@ -1,0 +1,206 @@
+.hezuo .title {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.hezuo .num {
+    font-size: 38px;
+    font-family: FuturaBT;
+    font-weight: bold;
+    color: #CF0202;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hezuo .desc {
+    width: 33px;
+    height: 5px;
+    background: #CF0202;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.hezuo .en {
+    font-size: 22px;
+    font-weight: 400;
+    color: #CF0202;
+    margin-top: 10px;
+}
+
+.hezuo .snack {
+    font-size: 20px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+    line-height: 40px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.tit {
+    display: flex;
+    margin-top: 70px;
+}
+
+.numr {
+    font-size: 120px;
+    font-family: Impact;
+    font-weight: 400;
+    color: #DDDDDD;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #CF0202;
+    padding: 20px 20px;
+    font-size: 34px;
+}
+
+.des .en {
+    font-size: 30px;
+}
+
+.caption .icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.caption .investment {
+    text-align: center;
+    font-size: 42px;
+    font-family: hzgb;
+    font-weight: 800;
+    color: #666666;
+}
+
+.content .make {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content .term_one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.content .term {
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.term_one .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.term_one .sur {
+    width: 5px;
+    height: 38px;
+    background: #CF0202;
+    border-radius: 3px;
+}
+
+.term_one .text {
+    width: 464px;
+    height: 70px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 36px;
+    margin-left: 26px;
+    align-items: center;
+    display: flex;
+}
+
+.requirement .store {
+    width: 1200px;
+    background-color: #9d1f01;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.partner .line {
+    width: 32px;
+    height: 8px;
+    background: #FFFFFF;
+}
+
+.partner p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.partner span {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.partner .manag {
+    margin-top: 25px;
+}
+
+.partner .regu {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+
+.requirement .market {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.joinicon {
+    box-sizing: border-box;
+}
+
+.joinicon .jc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 0 100px;
+}
+
+.joinicon .icon {
+    text-align: center;
+}
+
+.joinicon p {
+    font-size: 22px;
+    color: #333333;
+}
+
+.major {
+    width: 1200px;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 60px 100px;
+    box-sizing: border-box;
+}
+
+.major .oper {
+    font-size: 24px;
+    color: #CF0202;
+    margin-top: 20px;
+}
+.major .oper>span{
+    font-size: 24px;
+    color: #333;
+    line-height: 38px;
+}
