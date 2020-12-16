@@ -1,0 +1,98 @@
+.tit {
+    display: flex;
+    margin-top: 70px;
+}
+
+.numr {
+    font-size: 120px;
+    font-family: Impact;
+    font-weight: 400;
+    color: #DDDDDD;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #CF0202;
+    padding: 20px 20px;
+    font-size: 34px;
+}
+
+.des .en {
+    font-size: 30px;
+}
+
+.caption .line {
+    width: 57px;
+    height: 6px;
+    background: #CF0202;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+.list {
+    margin-top: 60px;
+}
+
+.news-item {
+    display: flex;
+}
+
+.clerk {
+    margin-left: 40px;
+}
+
+.clerk .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clerk .title>p {
+    font-size: 26px;
+    font-weight: 500;
+    color: #CF0202;
+    padding-top: 20px;
+}
+
+.clerk .date .day {
+    font-size: 54px;
+    font-weight: 800;
+    color: #666666;
+}
+
+.clerk .date .year {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.clerk .text {
+    margin-top: 20px;
+}
+
+.clerk .text .desc {
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+}
+
+.clerk .text .more {
+    padding: 8px 26px;
+    border: 2px solid #CF0202;
+    border-radius: 26px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #CF0202;
+    float: right;
+    margin-top: 20px;
+}
+
+.dashes {
+    width: 1200px;
+    height: 2px;
+    background-color: #DDDDDD;
+    margin-top: 40px;
+}
