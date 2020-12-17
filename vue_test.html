@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/new.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p v-bind:title="message">sssss: <span>{{text}}</span></p>
+        <a :href="url">baidu</a>
+        {{message}}
+
+        <p v-if="seen">dhdhhddl</p>
+
+        <ol>
+            <li v-for="todo in news">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: '页面加载于 ' + new Date().toLocaleString(),
+            text: 'zxcvbn',
+            url: 'http://www.baidu.com',
+            seen: true,
+            news: [{
+                    text: '学习 JavaScript'
+                },
+                {
+                    text: '学习 Vue'
+                },
+                {
+                    text: '整个牛项目'
+                }
+            ]
+
+        }
+    })
+    var a = [1,2,3];
+    a.
+</script>
+
+</html>

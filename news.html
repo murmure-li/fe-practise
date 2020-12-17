@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/new.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
         <div class="dynamic">
             <p>最新动态</p>
         </div>
-        <div class="content">
+        <div class="content" id="app">
             <div class="caption">
                 <div class="tit">
                     <div class="numr">ONE</div>
@@ -58,106 +59,28 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="list">
+                <div class="list" v-for="_new in news">
                     <!-- 新闻信息 -->
                     <div class="news-item">
                         <!-- 图片 -->
                         <div class="chart">
-                            <img src="./images/new1.png" alt="">
+                            <img v-bind:src="_new.cover" alt="">
                         </div>
                         <!-- 文案 -->
                         <div class="clerk">
                             <div class="title">
-                                <p>虾圆圆手打虾滑有哪些王牌产品？</p>
+                                <p>{{_new.title}}</p>
                                 <div class="date">
-                                    <span class="day">10.30</span>
-                                    <span class="year">2019</span>
+                                    <span class="day">{{getMD(_new.publish_at)}}</span>
+                                    <span class="year">{{getY(_new.publish_at)}}</span>
                                 </div>
                             </div>
                             <div class="text">
                                 <div class="desc">
-                                    虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......</div>
-                                <a href="" class="more">查看详情</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="dashes"></div>
-                </div>
-                <div class="list">
-                    <!-- 新闻信息 -->
-                    <div class="news-item">
-                        <!-- 图片 -->
-                        <div class="chart">
-                            <img src="./images/new1.png" alt="">
-                        </div>
-                        <!-- 文案 -->
-                        <div class="clerk">
-                            <div class="title">
-                                <p>虾圆圆手打虾滑有哪些王牌产品？</p>
-                                <div class="date">
-                                    <span class="day">10.30</span>
-                                    <span class="year">2019</span>
+                                    {{_new.desc}}
                                 </div>
+                                <a href="" class="more" @click="showNewsInfo(_new)">查看详情</a>
                             </div>
-                            <div class="text">
-                                <div class="desc">
-                                    虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......</div>
-                                <a href="" class="more">查看详情</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="dashes"></div>
-                </div>
-                <div class="list">
-                    <!-- 新闻信息 -->
-                    <div class="news-item">
-                        <!-- 图片 -->
-                        <div class="chart">
-                            <img src="./images/new1.png" alt="">
-                        </div>
-                        <!-- 文案 -->
-                        <div class="clerk">
-                            <div class="title">
-                                <p>虾圆圆手打虾滑有哪些王牌产品？</p>
-                                <div class="date">
-                                    <span class="day">10.30</span>
-                                    <span class="year">2019</span>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <div class="desc">
-                                    虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......</div>
-                                <a href="" class="more">查看详情</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="dashes"></div>
-                </div>
-                <div class="list">
-                    <!-- 新闻信息 -->
-                    <div class="news-item">
-                        <!-- 图片 -->
-                        <div class="chart">
-                            <img src="./images/new1.png" alt="">
-                        </div>
-                        <!-- 文案 -->
-                        <div class="clerk">
-                            <div class="title">
-                                <p>虾圆圆手打虾滑有哪些王牌产品？</p>
-                                <div class="date">
-                                    <span class="day">10.30</span>
-                                    <span class="year">2019</span>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <div class="desc">
-                                    虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......</div>
-                                <a href="" class="more">查看详情</a>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -214,5 +137,47 @@
         </div>
     </footer>
 </body>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            news: [{
+                id: 1,
+                title: '虾圆圆手打虾滑有哪些王牌产品？',
+                cover: './images/new1.png',
+                publish_at: '2019.10.30',
+                desc: '虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......',
+            },{
+                id: 1,
+                title: '虾圆圆手打虾滑有哪些王牌产品？',
+                cover: './images/new1.png',
+                publish_at: '2019.10.30',
+                desc: '虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......',
+            },{
+                id: 1,
+                title: '虾圆圆手打虾滑有哪些王牌产品？',
+                cover: './images/new1.png',
+                publish_at: '2019.10.30',
+                desc: '虾圆圆手打虾滑开创了成都专业只做虾滑的品质新时代，凭借其独特的美味、丰富的口感、优质的食材迅速俘获众多好吃嘴的放心，真材实料新鲜Q弹......',
+            },]
+
+        },
+        methods: {
+            getMD(date){
+                var arr = date.split('.')
+                return arr[1] + '.' + arr[2];
+            },
+            getY(date){
+                var arr = date.split('.')
+                return arr[0];
+            },
+            showNewsInfo(news){
+                alert(news.title)
+                return false
+            }
+        },
+    })
+</script>
 
 </html>
